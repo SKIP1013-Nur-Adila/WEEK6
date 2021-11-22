@@ -1,0 +1,47 @@
+Enter first integer number
+10
+Number is ten
+Number is 10
+NEXT
+Enter any grade : 
+C
+
+"If else enter grade"
+
+marks >=70 and less than 60
+
+"Switch without break"
+
+marks >=70 and less than 60
+marks >=60 and less than 50
+marks <=40
+Invalid marks
+
+"Switch with break"
+
+marks >=70 and less than 60
+
+"If Else Percentage marks"
+
+Enter percentage marks
+70
+Grade D
+
+"Switch Percentage marks"
+
+Grade C
+Grade D
+Grade E
+Grade F
+invalid grade
+
+"Switch break Percentage marks"
+
+Grade C
+
+"If else BMI"
+
+Please enter your weight in KG: 50
+Please enter your height in CM: 150
+Your BMI is 22.22 
+You are normal.
