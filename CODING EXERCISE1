@@ -1,0 +1,241 @@
+package exercise_WEEK6;
+import java.util.Scanner;
+public class SoalanThursday {
+	//class 18.11.2021
+	
+	//Switch hanya integer
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Use scanner input, Enter integer number. 
+		//Jika  number sama dengan input number, print number tersebut
+		
+		Scanner input=new Scanner(System.in);
+		
+//FIRST
+		int number1;
+		int number2;
+		int number3;
+		
+		
+		System.out.println("Enter first integer number");
+		number1 = input.nextInt();
+		
+		if(number1==10) {
+			System.out.println("Number is ten");
+		}
+		else if(number1 == 20) {
+			System.out.println("Number is twenty");
+		}
+		else {
+			System.out.println("Number");
+		}	
+	
+		
+			
+			
+			
+			
+			
+		/*System.out.println("Enter second integer number");
+		number2 = input.nextInt();
+		
+		System.out.println("Enter third integer number");
+		number3 = input.nextInt();
+		*/
+		
+		
+		
+//SECOND
+	
+		
+		switch (number1) {
+		
+		case 10:
+			System.out.println("");
+		
+		case 20:
+			System.out.println("");
+			
+		case 30:
+			System.out.println("Number is 30");
+			
+			default:
+				System.out.println("");
+		
+		}
+		
+		char grade;
+		String str =input.next();
+		
+		
+		System.out.println("Enter any grade : ");
+		grade = input.next().charAt(0);  //dari string kita nak ambil satu character
+		
+System.out.println("\nIf else enter grade\n");
+		if (grade == 'A')
+		System.out.println("marks >=90");
+		else if (grade == 'B')
+			System.out.println("marks >=80 and less than 90");
+		else if (grade == 'C')
+			System.out.println("marks >=70 and less than 60");
+		else if (grade == 'D')
+			System.out.println("marks >=60 and less than 70");
+		
+		else if (grade == 'E')
+			System.out.println("marks >=60 and less than 50");
+		else if (grade == 'F')
+			System.out.println("marks >=40 ");
+		else 
+			System.out.println("invalid grade");
+		
+		
+System.out.println("\nSwitch without break\n");
+		switch(grade) {
+		case 'A':
+			System.out.println("marks>=90");
+		case 'B':
+			System.out.println("marks >=80 and less than 90");
+		case 'C':
+			System.out.println("marks >=70 and less than 60");
+		case 'D':
+			System.out.println("marks >=60 and less than 50");
+		case 'E':
+			System.out.println("marks <=40");
+		default:
+			System.out.println("Invalid marks");
+		}
+		
+System.out.println("\nSwitch with break\n");
+		switch(grade) {
+		case 'A':
+			System.out.println("marks>=90");
+			break;
+		case 'B':
+			System.out.println("marks >=80 and less than 90");
+			break;
+		case 'C':
+			System.out.println("marks >=70 and less than 60");
+			break;
+		case 'D':
+			System.out.println("marks >=60 and less than 50");
+			break;
+		case 'E':
+			System.out.println("marks <=40");
+			break;
+		default:
+			System.out.println("Invalid marks");
+			break;
+		}
+		
+System.out.println("\nIf Else Percentage marks\n");
+		System.out.println("Enter percentage marks");
+		int marks = input.nextInt();
+		
+		if (marks >=90)
+			System.out.println("Grade A");
+			else if ((marks >=80) && (marks <= 90))
+				System.out.println("Grade B");
+			else if ((marks >=70) && (marks<= 60))
+				System.out.println("Grade C");
+			else if ((marks >=60 )&& ( marks<=70))
+				System.out.println("Grade D");
+			
+			else if ((marks >=60) && (marks<= 50))
+				System.out.println("Grade E");
+			else if (marks >=40 )
+				System.out.println("Grade F");
+			else 
+				System.out.println("invalid grade");
+		
+
+System.out.println("\nSwitch Percentage marks\n");	
+
+			switch (marks/10){
+				case 9:
+				System.out.println("Grade A");
+				case 8:
+					System.out.println("Grade B");
+				case 7:
+					System.out.println("Grade C");
+				case 6:
+					System.out.println("Grade D");
+				case 5:
+					System.out.println("Grade E");
+				case 4:
+					System.out.println("Grade F");
+				default: 
+					System.out.println("invalid grade");
+
+			}
+
+System.out.println("\nSwitch break Percentage marks\n");	
+
+			switch (marks/10){
+				case 9:
+				System.out.println("Grade A");
+				break;
+				case 8:
+					System.out.println("Grade B");
+					break;
+				case 7:
+					System.out.println("Grade C");
+					break;
+				case 6:
+					System.out.println("Grade D");
+					break;
+				case 5:
+					System.out.println("Grade E");
+					break;
+				case 4:
+					System.out.println("Grade F");
+					break;
+				default: 
+					System.out.println("invalid grade");
+					break;
+
+			}
+
+
+//We know that Sam’s weight is 16.9 kg and his height is 105.4 cm. What is Sam’s BMI?
+			//(16.9 kg / 105.4 cm / 105.4 cm ) x 10,000 = 15.2
+					//Masukkan bmi.. jika kurang dari 18.5 - underweight, jika kurang dari 25 - normal, jika kurang dari 30 - overweight dan lain-lain Obese
+		
+			
+System.out.println("\nIf else BMI \n");
+					float weight;
+					float height;
+					float bmi;
+					
+					System.out.print("Please enter your weight in KG: ");
+					weight=input.nextInt();
+					System.out.print("Please enter your height in CM: ");
+					height=input.nextInt();
+					
+					bmi = (100*100*weight)/(height*height);
+					System.out.printf("Your BMI is %.2f " ,bmi);
+					System.out.println();
+					        
+					if (bmi < 18.5)
+					{
+					    System.out.println("You are underweight.");
+					}
+					else if (bmi < 25)
+					{
+					    System.out.println("You are normal.");
+					}
+					else if (bmi < 30)
+					{
+					    System.out.println("You are overweight.");
+					}
+					else
+					{
+					    System.out.println("You are obese.");
+					}
+						
+					}
+				
+	}
+
+
