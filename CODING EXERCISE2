@@ -1,0 +1,75 @@
+package week6_SelfLearning;
+
+import java.util.Scanner;
+
+public class BMI {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner input=new Scanner(System.in);
+		
+		
+		float weight;
+		float height;
+		float bmi;
+		
+		System.out.print("Please enter your weight in KG: ");
+		weight=input.nextInt();
+		System.out.print("Please enter your height in M: ");
+		height=input.nextInt();
+		
+		bmi = (100*100*weight)/(height*height);
+		System.out.printf("Your BMI is %.2f " ,bmi);
+		System.out.println();
+		        
+		if (bmi < 18.5)
+		{
+		    System.out.println("Your BMI group is a");
+		}
+		else if (bmi < 25)
+		{
+		    System.out.println("Your BMI group is b");
+		}
+		else if (bmi < 30)
+		{
+		    System.out.println("Your BMI group is c");
+		}
+		else
+		{
+		    System.out.println("Your BMI group is d");
+		}
+		
+		char bmii;
+		
+		
+		System.out.print("Enter your BMI group: ");
+		bmii=input.next().charAt(0);
+		
+		
+		
+		
+		switch (bmii){
+		
+		case 'a':
+			System.out.printf(" You are underweight.");
+			break;
+			case 'b':
+				System.out.printf("You are normal.");
+				break;
+			case 'c':
+				System.out.printf("You are overweight.");
+				break;
+			case 'd':
+				System.out.printf("You are obese.");
+				break;
+			default: 
+				System.out.printf("invalid");
+				break;
+		
+		
+	
+
+	}
+
+	}}
