@@ -1,0 +1,28 @@
+package selfLearning;
+
+public class satu {
+	 public static void main(String[] args) 
+	 {  
+	  int number1=8,number2=3,sum,substract,average,modulus;
+	  
+	  sum=number1+number2;
+	  substract=number1-number2;
+	  average=sum/2;
+	  modulus=number1%number2;  
+
+	   System.out.println("The sum is "+ sum);
+	   System.out.println("The substraction is "+ substract);
+	   System.out.println("The average number is "+ average);
+	   System.out.println("The modulus is "+ modulus);
+	   
+	   
+	   int money =340, remainder, Number_of_Rm100_notes, Number_of_Rm5_notes ;
+	   
+	   remainder= 340%100;
+	   Number_of_Rm100_notes= (340 - remainder)/100;
+	   Number_of_Rm5_notes= remainder/5;
+	     System.out.println ("Rm100 notes="  +Number_of_Rm100_notes);
+	     System.out.println ("Rm5 notes=" +Number_of_Rm5_notes);
+	   }
+	}
+
